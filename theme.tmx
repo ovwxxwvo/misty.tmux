@@ -1,0 +1,71 @@
+# TMUX config,
+# Maintainer:	 Jessee Chan <CYPHER0@foxmail.com>
+# Last Change: 2024.11.20
+
+
+set -g  status-interval          1
+set -g  status-justify           left
+set -g  window-status-separator  "  "
+set -g  automatic-rename-format  "#( ps -o comm= -t '#{pane_tty}' |tail -n 1 )"
+# set -g  automatic-rename-format  '#{pane_current_command}'
+
+# window
+set -g  window-style                 "#{@color_window_pasv}"
+set -g  window-active-style          "#{@color_window_actv}"
+# border
+set -g  pane-border-style            "#{@color_border_pasv}"
+set -g  pane-active-border-style     "#{@color_border_actv}"
+# bar, Message
+set -g  message-style                "#{@color_status_pasv}"
+set -g  message-command-style        "#{@color_status_actv}"
+# bar, Status
+set -g  status-style                 "#{@color_status_pasv}"
+set -g  window-status-style          "#{@color_status_pasv}"
+set -g  window-status-current-style  "#{@color_status_actv}"
+# set -g  window-status-activity-style "#{@color_status_pasv}"
+# set -g  window-status-last-style     "#{@color_status_pasv}"
+
+
+set -g  @color_default_nn  "fg=default,bg=default,noreverse"
+set -g  @color_default_rn  "fg=default,bg=default,reverse"
+set -g  @color_default_nb  "fg=default,bg=default,noreverse,bold"
+set -g  @color_default_rb  "fg=default,bg=default,reverse,bold"
+
+# status bar, Left
+set -g status-left "\
+#[#{@color_default_nn}] #S \
+#[#{@color_default_nn}]#{@style_status_lt}  \
+"
+
+# status bar, Right
+set -g status-right "\
+#[#{@color_re}]#{@style_status_rt}\
+#[#{@color_gr}]#{@style_status_rt}\
+#[#{@color_bl}]#{@style_status_rt}\
+#[#{@color_ye}]#{@style_status_rt}\
+#[#{@color_cy}]#{@style_status_rt}\
+#[#{@color_ma}]#{@style_status_rt}\
+#[#{@color_or}]#{@style_status_rt}\
+#[#{@color_le}]#{@style_status_rt}\
+#[#{@color_sg}]#{@style_status_rt}\
+#[#{@color_sb}]#{@style_status_rt}\
+#[#{@color_vi}]#{@style_status_rt}\
+#[#{@color_pi}]#{@style_status_rt}\
+#[#{@color_default_nn}] %H:%M \
+"
+
+# status bar, Tab unfocus
+set -g window-status-format "\
+#[#{@color_default_nn}]#{@style_status_tab_pasv_lt}\
+#[#{@color_default_nn}] #I #W \
+#[#{@color_default_nn}]#{@style_status_tab_pasv_rt}\
+"
+
+# status bar, Tab focus
+set -g window-status-current-format "\
+#[#{@color_default_nn}]#{@style_status_tab_actv_lt}\
+#[#{@color_default_rn}] #I #W \
+#[#{@color_default_nn}]#{@style_status_tab_actv_rt}\
+"
+
+
