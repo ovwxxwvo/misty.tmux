@@ -23,7 +23,7 @@ The `nerd font` is depends on you.
 
 Clone the repository to your tmux config dir :  
 ```  
-git clone https://github.com/ovwxxwvo/misty-palette.git ~/.config/tmux/plugins/  
+git clone https://github.com/ovwxxwvo/misty.tmux.git ~/.config/tmux/plugins/  
 ```  
 Add this line to your tmux config file :  
 ```  
