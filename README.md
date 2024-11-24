@@ -13,21 +13,21 @@ Some recommended settings outside of the plugin.
 Maybe a gray-toned, textured wallpaper will be better fit this.  
 And set a little transparency in the terminal emulator.  
 
-你的应用，你说了算。不要害怕修改文件。  
-这是插件之外的一些推荐设置。  
-也许一张灰度纹理的壁纸会更适配。  
-并在终端模拟器中设置一点透明度。  
+你的应用，你说了算。不要害怕修改文件。这是插件之外的一些推荐设置。  
+也许一张灰度纹理的壁纸会更适配。并在终端模拟器中设置一点透明度。  
 
 ----  
 
 ### Installation 安装  
 
 The `nerd font` is depends on you.  
+
 `nerd font`取决于你。  
 
-#### Manual (Recommended)  手动（推荐）  
+#### Manual (Recommended) 手动（推荐）  
 
 **The path of the actual config file should be modified according to your own `tmux`.**  
+
 实际配置文件的路径应该根据你自己的 “tmux” 进行修改。  
 
 Clone the repository to your tmux config dir :  
@@ -45,7 +45,7 @@ tmux source ~/.config/tmux/tmux.conf
 
 ----  
 
-### Configurations  配置  
+### Configurations 配置  
 
 You can create a file for configuration & source it :  
 ```  
@@ -64,10 +64,11 @@ vi ~/.config/tmux/plugins/misty.tmux/color.tmx
 vi ~/.config/tmux/plugins/misty.tmux/style.tmx  
 ```  
 
-#### Configurations Options  配置选项  
+#### Configurations Options 配置选项  
 
 There are quite a lot of configuration options.  
 Maybe you just pick the ones you need and modify them.  
+
 有相当多的配置选项。也许你只挑选你需要的并进行修改。  
 
 ~/.config/tmux/plugins/misty.tmux/style.tmx  
