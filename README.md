@@ -4,8 +4,10 @@ The color of tmux pane & status line change follows by the command you set.
 
 迷幻多彩主题。tmux 窗格和状态栏的颜色会根据你设置的命令而变化。  
 
--- Global Preview 全局预览  
-![screenshot](screenshot/00_global.png)  
+-- window 窗口  
+![screenshot](screenshot/window.png)  
+-- status line 状态栏  
+![screenshot](screenshot/status.png)  
 
 ----  
 
