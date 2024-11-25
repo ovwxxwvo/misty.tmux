@@ -1,36 +1,55 @@
-## Misty for tmux  
+## Misty Colorful theme for tmux  
 
-A misty colorful theme.  
 The color of tmux pane & status line change follows by the command you set.  
 
-一个迷幻多彩主题。tmux 窗格的颜色和状态栏会根据你设置的命令而变化。  
+迷幻多彩主题。tmux 窗格和状态栏的颜色会根据你设置的命令而变化。  
 
 -- Global Preview 全局预览  
 ![screenshot](screenshot/00_global.png)  
 
-Your app, Your rule. Feel free to modify the files.  
-Some recommended settings outside of the plugin.  
-Maybe a gray-toned, textured wallpaper will be better fit this.  
-And set a little transparency in the terminal emulator.  
+----  
 
-你的应用，你说了算。不要害怕修改文件。这是插件之外的一些推荐设置。  
-也许一张灰度纹理的壁纸会更适配。并在终端模拟器中设置一点透明度。  
+### Suggestion 建议  
+
+Your app, Your rule. Feel free to modify the files.  
+
+& some suggestions for settings outside the plugin.  
+- Maybe a gray-textured wallpaper will be better fit this.  
+- And set a little transparency in the terminal emulator, about 80%|90%.  
+
+& some personal preference settings inside the plugin.  
+- dark grey     `#101010` as the bg color for common commands.  
+- dark orange   `#1a140d` as the bg color for shell,    like `fish`.  
+- dark skyblue  `#0d141a` as the bg color for explorer, like `yazi`.  
+- dark seagreen `#0d1a14` as the bg color for editor,   like `nvim`.  
+
+The `nerd font` is depends on yourself.  
+
+你的应用，你说了算。不要害怕修改文件。  
+
+& 一些在插件之外的设定建议。  
+- 也许一张灰色纹理的壁纸会更适配。  
+- 且在终端模拟器中设置一点透明度，大约 80%|90%。  
+
+& 一些在插件内部的个人喜好设定。  
+- 深灰色(灰)`#101010` 作为普通命令的背景色。  
+- 深橙色(棕)`#1a140d` 作为命令解析器`fish`的背景色。  
+- 天蓝色(蔚)`#0d141a` 作为文件管理器`yazi`的背景色。  
+- 海绿色(碧)`#0d1a14` 作为文本编辑器`nvim`的背景色。  
+
+`nerd font`取决于你自己咯。  
 
 ----  
 
 ### Installation 安装  
 
-The `nerd font` is depends on you.  
-
-`nerd font`取决于你。  
-
-#### Manual (Recommended) 手动（推荐）  
-
 **The path of the actual config file should be modified according to your own `tmux`.**  
 
-实际配置文件的路径应该根据你自己的 “tmux” 进行修改。  
+实际配置文件的路径应该根据你自己的 `tmux` 进行修改。  
 
-Clone the repository to your tmux config dir :  
+#### Manual(Recommended) 手动（推荐）  
+
+Clone the repo to your tmux config dir :  
 ```  
 git clone https://github.com/ovwxxwvo/misty.tmux.git ~/.config/tmux/plugins/  
 ```  
@@ -53,7 +72,7 @@ mkdir ~/.config/tmux/config
 touch ~/.config/tmux/config/misty.tmux  
 vi    ~/.config/tmux/config/misty.tmux  
 ```  
-Add this line to your tmux config file :  
+Add this line to your tmux config file for `source` :  
 ```  
 source ~/.config/tmux/config/misty.tmux  
 ```  
@@ -152,7 +171,6 @@ set -g  @style_colorful_cmd3       "nvim"
 
 ----  
 
-### License 许可证  
-[MIT](LICENSE)  
+### [MIT](LICENSE) License 许可证  
 
 
