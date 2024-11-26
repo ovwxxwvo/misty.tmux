@@ -1,0 +1,64 @@
+# TMUX config,
+# Maintainer:	 Jessee Chan <CYPHER0@foxmail.com>
+# Last Change: 2024.11.20
+
+
+# set default color
+  set -s  @color_window_actv  "fg=#b0b0b0,bg=#101010"
+  set -s  @color_window_pasv  "fg=#505050,bg=#303030"
+  set -s  @color_border_actv  "fg=#d0d0d0,bg=#101010"
+  set -s  @color_border_pasv  "fg=#303030,bg=#303030"
+  set -s  @color_status_actv  "fg=#d0d0d0,bg=#101010"
+  set -s  @color_status_pasv  "fg=#b0b0b0,bg=#101010"
+
+# set command color others
+  set -s  @color_cmd0_window  "fg=#b0b0b0,bg=#101010"
+  set -s  @color_cmd0_border  "fg=#d0d0d0,bg=#101010"
+  set -s  @color_cmd0_status  "fg=#b0b0b0,bg=#101010"
+  set -s  @color_cmd0_statlt  "fg=#b0b0b0,bg=#101010"
+  set -s  @color_cmd0_statrt  "fg=#b0b0b0,bg=#101010"
+  set -s  @color_cmd0_statfc  "fg=#b0b0b0,bg=#101010"
+  set -s  @color_cmd0_statnf  "fg=#b0b0b0"
+
+# set command color fish
+  set -s  @color_cmd1_window  "fg=#b08050,bg=#1a140d"
+  set -s  @color_cmd1_border  "fg=#d08030,bg=#201000"
+  set -s  @color_cmd1_status  "fg=#b08050,bg=#1a140d"
+  set -s  @color_cmd1_statlt  "fg=#b08050,bg=#1a140d"
+  set -s  @color_cmd1_statrt  "fg=#b08050,bg=#1a140d"
+  set -s  @color_cmd1_statfc  "fg=#b08050,bg=#1a140d"
+  set -s  @color_cmd1_statnf  "fg=#b08050"
+
+# set command color yazi
+  set -s  @color_cmd2_window  "fg=#5080b0,bg=#0d141a"
+  set -s  @color_cmd2_border  "fg=#3080d0,bg=#001020"
+  set -s  @color_cmd2_status  "fg=#5080b0,bg=#0d141a"
+  set -s  @color_cmd2_statlt  "fg=#5080b0,bg=#0d141a"
+  set -s  @color_cmd2_statrt  "fg=#5080b0,bg=#0d141a"
+  set -s  @color_cmd2_statfc  "fg=#5080b0,bg=#0d141a"
+  set -s  @color_cmd2_statnf  "fg=#5080b0"
+
+# set command color nvim
+  set -s  @color_cmd3_window  "fg=#50b080,bg=#0d1a14"
+  set -s  @color_cmd3_border  "fg=#30d080,bg=#002010"
+  set -s  @color_cmd3_status  "fg=#50b080,bg=#0d1a14"
+  set -s  @color_cmd3_statlt  "fg=#50b080,bg=#0d1a14"
+  set -s  @color_cmd3_statrt  "fg=#50b080,bg=#0d1a14"
+  set -s  @color_cmd3_statfc  "fg=#50b080,bg=#0d1a14"
+  set -s  @color_cmd3_statnf  "fg=#50b080"
+
+# set color pallete
+  set -s  @color_re  "fg=#ffa0a0"
+  set -s  @color_gr  "fg=#a0ffa0"
+  set -s  @color_bl  "fg=#a0a0ff"
+  set -s  @color_ye  "fg=#ffffa0"
+  set -s  @color_cy  "fg=#a0ffff"
+  set -s  @color_ma  "fg=#ffa0ff"
+  set -s  @color_or  "fg=#ffd0a0"
+  set -s  @color_le  "fg=#d0ffa0"
+  set -s  @color_sg  "fg=#a0ffd0"
+  set -s  @color_sb  "fg=#a0d0ff"
+  set -s  @color_vi  "fg=#d0a0ff"
+  set -s  @color_pi  "fg=#ffa0d0"
+
+

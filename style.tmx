@@ -1,0 +1,21 @@
+# TMUX config,
+# Maintainer:	 Jessee Chan <CYPHER0@foxmail.com>
+# Last Change: 2024.11.20
+
+
+set -g  @style_status_lt           ""
+set -g  @style_status_rt           "∩"
+
+set -g  @style_status_tab_actv_lt  ""
+set -g  @style_status_tab_actv_rt  ""
+set -g  @style_status_tab_pasv_lt  "("
+set -g  @style_status_tab_pasv_rt  ")"
+
+
+set -g  @style_blocked_cmds        "mpv"
+
+set -g  @style_colorful_cmd1       "fish"
+set -g  @style_colorful_cmd2       "yazi"
+set -g  @style_colorful_cmd3       "nvim"
+
+
