@@ -118,8 +118,8 @@ sudo \
   #140d1a #140d1a #140d1a #140d1a #140d1a #140d1a  \  
   \n\  
 fish \  
-  #50b0b0 #30d0d0 #50b0b0 #50b0b0 #50b0b0 #50b0b0 #50b0b0 \  
-  #0d1a1a #0d1a1a #0d1a1a #0d1a1a #0d1a1a #0d1a1a  \  
+  #b08050 #d08030 #b08050 #b08050 #b08050 #b08050 #b08050 \  
+  #1a140d #1a140d #1a140d #1a140d #1a140d #1a140d  \  
   \n\  
 yazi \  
   #5080b0 #3080d0 #5080b0 #5080b0 #5080b0 #5080b0 #5080b0 \  
@@ -153,7 +153,7 @@ Your app, Your rule. Feel free to modify the files.
 & some personal preference settings inside the plugin, change it to your own.  
 - dark  grey     `#101010` as the bg color for common commands.  
 - dark  violet   `#140d1a` as the bg color for root,     like `sudo`.  
-- dark  cyan     `#0d1a1a` as the bg color for shell,    like `fish`.  
+- dark  orange   `#1a140d` as the bg color for shell,    like `fish`.  
 - dark  skyblue  `#0d141a` as the bg color for explorer, like `yazi`.  
 - dark  seagreen `#0d1a14` as the bg color for editor,   like `nvim`.  
 - light grey     `#b0b0b0` as the bg color for ai-tool,  like `ollama`.  
@@ -167,9 +167,9 @@ Your app, Your rule. Feel free to modify the files.
 & 一些在插件内部的个人喜好设定，更换为你的喜好。  
 - 深灰色 `#101010` 作为普通命令的背景色。  
 - 深紫色 `#140d1a` 作为高级用户   `sudo`   的背景色。  
-- 深青色 `#0d1a1a` 作为命令解析器 `fish`   的背景色。  
-- 深蓝色 `#0d141a` 作为文件管理器 `yazi`   的背景色。  
-- 深绿色 `#0d1a14` 作为文本编辑器 `nvim`   的背景色。  
+- 深橙色 `#1a140d` 作为命令解析器 `fish`   的背景色。  
+- 深天蓝 `#0d141a` 作为文件管理器 `yazi`   的背景色。  
+- 深海绿 `#0d1a14` 作为文本编辑器 `nvim`   的背景色。  
 - 浅灰色 `#b0b0b0` 作为智能工具集 `ollama` 的背景色。  
 
 ----  
