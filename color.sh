@@ -6,9 +6,7 @@
 pts=''
   block_cmds=''
   last_cmd=''
-  color_cmd1=''
-  color_cmd2=''
-  color_cmd3=''
+  cmd_clr=''
   color_window=''
   color_border=''
   color_status=''
@@ -17,7 +15,6 @@ pts=''
   color_stawnf=''
   color_stawfc=''
 
-
 get_command() {
   pts=$( tmux display-message -p "#{pane_tty}" )
   block_cmds=$( tmux show -gv @style_blocked_cmds )
@@ -25,54 +22,26 @@ get_command() {
     |grep -Ev $block_cmds \
     |tail -n 1 \
     )
-  color_cmd1=$( tmux show -gv @style_colorful_cmd1 )
-  color_cmd2=$( tmux show -gv @style_colorful_cmd2 )
-  color_cmd3=$( tmux show -gv @style_colorful_cmd3 )
   # tmux display-message "#{pane_tty}"
-  # tmux display-message "$last_cmd $color_cmd1 $color_cmd2 $color_cmd3"
-  # echo $color_cmd1
-  # echo $color_cmd2
-  # echo $color_cmd3
+  # tmux display-message "$last_cmd | $color_cmd10 $color_cmd10 $color_cmd20 $color_cmd30"
   }
 
 get_color() {
   # set app in different color
-  if   [[ $last_cmd =~ $color_cmd3 ]]; then
-    color_window=$( tmux show -sv @color_cmd3_window )
-    color_border=$( tmux show -sv @color_cmd3_border )
-    color_status=$( tmux show -sv @color_cmd3_status )
-    color_stalft=$( tmux show -sv @color_cmd3_statlt )
-    color_starft=$( tmux show -sv @color_cmd3_statrt )
-    color_stawnf=$( tmux show -sv @color_cmd3_statnf )
-    color_stawfc=$( tmux show -sv @color_cmd3_statfc )
-  elif [[ $last_cmd =~ $color_cmd2 ]]; then
-    color_window=$( tmux show -sv @color_cmd2_window )
-    color_border=$( tmux show -sv @color_cmd2_border )
-    color_status=$( tmux show -sv @color_cmd2_status )
-    color_stalft=$( tmux show -sv @color_cmd2_statlt )
-    color_starft=$( tmux show -sv @color_cmd2_statrt )
-    color_stawnf=$( tmux show -sv @color_cmd2_statnf )
-    color_stawfc=$( tmux show -sv @color_cmd2_statfc )
-  elif [[ $last_cmd =~ $color_cmd1 ]]; then
-    color_window=$( tmux show -sv @color_cmd1_window )
-    color_border=$( tmux show -sv @color_cmd1_border )
-    color_status=$( tmux show -sv @color_cmd1_status )
-    color_stalft=$( tmux show -sv @color_cmd1_statlt )
-    color_starft=$( tmux show -sv @color_cmd1_statrt )
-    color_stawnf=$( tmux show -sv @color_cmd1_statnf )
-    color_stawfc=$( tmux show -sv @color_cmd1_statfc )
-  else
-    color_window=$( tmux show -sv @color_cmd0_window )
-    color_border=$( tmux show -sv @color_cmd0_border )
-    color_status=$( tmux show -sv @color_cmd0_status )
-    color_stalft=$( tmux show -sv @color_cmd0_statlt )
-    color_starft=$( tmux show -sv @color_cmd0_statrt )
-    color_stawnf=$( tmux show -sv @color_cmd0_statnf )
-    color_stawfc=$( tmux show -sv @color_cmd0_statfc )
-  fi
+  cmd_clr=$( tmux show -gv @cmd_clrs |grep "$last_cmd" )
+  [ "$cmd_clr" = '' ] && cmd_clr=$( tmux show -gv @cmd_clrs |grep "else" )
+  color_window=$( echo $cmd_clr |awk -F"[\t ]+" '{printf "fg=%s,bg=%s", $2,$9 }' )
+  color_border=$( echo $cmd_clr |awk -F"[\t ]+" '{printf "fg=%s,bg=%s", $3,$10}' )
+  color_status=$( echo $cmd_clr |awk -F"[\t ]+" '{printf "fg=%s,bg=%s", $4,$11}' )
+  color_stalft=$( echo $cmd_clr |awk -F"[\t ]+" '{printf "fg=%s,bg=%s", $5,$12}' )
+  color_starft=$( echo $cmd_clr |awk -F"[\t ]+" '{printf "fg=%s,bg=%s", $6,$13}' )
+  color_stawfc=$( echo $cmd_clr |awk -F"[\t ]+" '{printf "fg=%s,bg=%s", $7,$14}' )
+  color_stawnf=$( echo $cmd_clr |awk -F"[\t ]+" '{printf "fg=%s"      , $8    }' )
+  # tmux display-message "$last_cmd | $cmd_clr"
   }
 
 set_color() {
+  # tmux display-message "$last_cmd | $cmd_clr"
   tmux set -s  window-active-style          "$color_window"
   tmux set -s  pane-active-border-style     "$color_border"
   tmux set -s  status-style                 "$color_status"

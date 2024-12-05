@@ -3,10 +3,12 @@
 # Last Change: 2024.11.20
 
 
-source ~/.config/tmux/plugins/misty.tmux/color.tmx
-source ~/.config/tmux/plugins/misty.tmux/style.tmx
-source ~/.config/tmux/plugins/misty.tmux/theme.tmx
+%hidden plugin="$HOME/.config/tmux/plugins"
 
-source ~/.config/tmux/plugins/misty.tmux/auto.tmx
+source $plugin/misty.tmux/color.tmx
+source $plugin/misty.tmux/style.tmx
+source $plugin/misty.tmux/theme.tmx
+
+source $plugin/misty.tmux/auto.tmx
 
 
