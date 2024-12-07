@@ -17,9 +17,9 @@ win_nm=$( \
 
 
 if [[ $win_nm -gt 1 ]]; then
-  tmux set -g status on
+  tmux set -s status on
 else
-  tmux set -g status off
+  tmux set -s status off
 fi
 
 
