@@ -24,7 +24,8 @@ The following config file path base on `Arch Linux`.
 
 Clone the repo to your tmux config dir :  
 ```  
-git clone https://github.com/ovwxxwvo/misty.tmux.git ~/.config/tmux/plugins/  
+cd ~/.config/tmux/plugins/  
+git clone https://github.com/ovwxxwvo/misty.tmux.git  
 ```  
 Add this line to your yazi config file `~/.config/tmux/tmux.conf` :  
 ```  
