@@ -1,0 +1,64 @@
+# TMUX config,
+
+
+# set default color
+  set -g  @color_window_actv  "fg=#d0d0d0,bg=#101010"
+  set -g  @color_window_pasv  "fg=#303030,bg=#202020"
+  set -g  @color_border_actv  "fg=#e0e0e0,bg=#101010"
+  set -g  @color_border_pasv  "fg=#202020,bg=#202020"
+  set -g  @color_status_actv  "fg=#e0e0e0,bg=#101010"
+  set -g  @color_status_pasv  "fg=#d0d0d0,bg=#101010"
+
+# set command color
+  set -g  @color_cmd_window   "fg=#d0d0d0,bg=#101010"
+  set -g  @color_cmd_border   "fg=#e0e0e0,bg=#101010"
+  set -g  @color_cmd_status   "fg=#d0d0d0,bg=#101010"
+  set -g  @color_cmd_statlt   "fg=#d0d0d0,bg=#101010"
+  set -g  @color_cmd_statrt   "fg=#d0d0d0,bg=#101010"
+  set -g  @color_cmd_statfc   "fg=#d0d0d0,bg=#101010"
+  set -g  @color_cmd_statnf   "fg=#d0d0d0"
+
+# set color pallete
+  set -g  @color_re  "fg=#f0c0c0"
+  set -g  @color_gr  "fg=#c0f0c0"
+  set -g  @color_bl  "fg=#c0c0f0"
+  set -g  @color_ye  "fg=#f0f0c0"
+  set -g  @color_cy  "fg=#c0f0f0"
+  set -g  @color_ma  "fg=#f0c0f0"
+  set -g  @color_or  "fg=#f0e0c0"
+  set -g  @color_le  "fg=#e0f0c0"
+  set -g  @color_sg  "fg=#c0f0e0"
+  set -g  @color_sb  "fg=#c0e0f0"
+  set -g  @color_vi  "fg=#e0c0f0"
+  set -g  @color_pi  "fg=#f0c0e0"
+
+# window  border  status  statlt  statrt  statfc  statnf
+set -g  @cmd_clrs "\
+  \n\
+sudo \
+  #8050a0 #8030c0 #8050a0 #8050a0 #8050a0 #8050a0 #8050a0 \
+  #171618 #171618 #171618 #171618 #171618 #171618  \
+  \n\
+fish \
+  #a08050 #c08030 #a08050 #a08050 #a08050 #a08050 #a08050 \
+  #181716 #181716 #181716 #181716 #181716 #181716  \
+  \n\
+yazi \
+  #5080a0 #3080c0 #5080a0 #5080a0 #5080a0 #5080a0 #5080a0 \
+  #161718 #161718 #161718 #161718 #161718 #161718  \
+  \n\
+nvim \
+  #50a080 #30c080 #50a080 #50a080 #50a080 #50a080 #50a080 \
+  #161817 #161817 #161817 #161817 #161817 #161817  \
+  \n\
+ollama \
+  #50a0a0 #30c0c0 #50a0a0 #50a0a0 #50a0a0 #50a0a0 #50a0a0 \
+  #161818 #161818 #161818 #161818 #161818 #161818  \
+  \n\
+else \
+  #d0d0d0 #e0e0e0 #d0d0d0 #d0d0d0 #d0d0d0 #d0d0d0 #d0d0d0 \
+  #101010 #101010 #101010 #101010 #101010 #101010  \
+  \n\
+"
+
+

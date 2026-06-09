@@ -1,0 +1,24 @@
+# TMUX config,
+
+
+set-hook -g window-renamed[20] \
+  " \
+  run -b ~/.config/tmux/plugins/misty.tmux/status.sh  \;  \
+  run -b ~/.config/tmux/plugins/misty.tmux/color.sh   \;  \
+  "
+
+set-hook -g pane-focus-in[20] \
+  " \
+  run -b ~/.config/tmux/plugins/misty.tmux/status.sh  \;  \
+  run -b ~/.config/tmux/plugins/misty.tmux/color.sh   \;  \
+  run -b ~/.config/tmux/plugins/misty.tmux/rename.sh  \;  \
+  "
+
+set-hook -g pane-focus-out[20] \
+  " \
+  run -b ~/.config/tmux/plugins/misty.tmux/status.sh  \;  \
+  run -b ~/.config/tmux/plugins/misty.tmux/color.sh   \;  \
+  run -b ~/.config/tmux/plugins/misty.tmux/rename.sh  \;  \
+  "
+
+

@@ -1,0 +1,15 @@
+# TMUX config,
+
+
+set -g  @style_status_lt           ""
+set -g  @style_status_rt           "∩"
+
+set -g  @style_status_tab_actv_lt  ""
+set -g  @style_status_tab_actv_rt  ""
+set -g  @style_status_tab_pasv_lt  "("
+set -g  @style_status_tab_pasv_rt  ")"
+
+
+set -g  @style_blocked_cmds        "mpv"
+
+
