@@ -5,10 +5,10 @@ The color of tmux pane & status line change follows by the command you set.
 迷幻多彩主题。tmux 窗格和状态栏的颜色会根据你设置的命令而变化。  
 
 -- single tab window     单标签窗口  
-![screenshot](screenshot/window.png)  
+![screenshot](https://cdn.jsdelivr.net/gh/ovwxxwvo/img-bed@main/01_tmux/misty-tmux-window.png)  
 
 -- multi tab status line 多标签状态栏  
-![screenshot](screenshot/status.png)  
+![screenshot](https://cdn.jsdelivr.net/gh/ovwxxwvo/img-bed@main/01_tmux/misty-tmux-status.png)  
 
 ----  
 
