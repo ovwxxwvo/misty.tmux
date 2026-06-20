@@ -1,9 +1,11 @@
 # TMUX config,
+# Maintainer:	 Jessee Chan <CYPHER0@foxmail.com>
+# Last Change: 2024.11.20
 
 
 # set default color
   set -g  @color_window_actv  "fg=#d0d0d0,bg=#101010"
-  set -g  @color_window_pasv  "fg=#303030,bg=#202020"
+  set -g  @color_window_pasv  "fg=#d0d0d0,bg=#202020"
   set -g  @color_border_actv  "fg=#e0e0e0,bg=#101010"
   set -g  @color_border_pasv  "fg=#202020,bg=#202020"
   set -g  @color_status_actv  "fg=#e0e0e0,bg=#101010"
